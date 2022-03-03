@@ -6,14 +6,27 @@ public class Main
     {
 	double degreesC = 0;
 
-        System.out.print("");
-        Scanner in = new Scanner(System.in);
+    while(degreesC >= 0 | degreesC <= 0)
+        {
 
-        System.out.print("Enter degrees C to be converted to degrees F: ");
-        degreesC = in.nextDouble();
+            System.out.print("");
+            Scanner in = new Scanner(System.in);
 
-        System.out.println(degreesC + " degrees C is " + (degreesC * 1.8 + 32) + " in degrees F.");
+            System.out.print("Enter degrees C to be converted to degrees F: ");
+            degreesC = in.nextDouble();
 
+            if(degreesC >= 0 | degreesC <= 0)
+            {
+                System.out.println(degreesC + " degrees C is " + (degreesC * 1.8 + 32) + " in degrees F.");
+            }
+
+            else
+            {
+                System.out.println("Invalid entry of " + degreesC + ", try again.");
+            }
+
+
+        }
 
 
     }
